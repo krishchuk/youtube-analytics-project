@@ -69,13 +69,3 @@ class Channel:
     @classmethod
     def get_service(cls):
         return build('youtube', 'v3', developerKey=cls.api_key)
-
-
-# ch = Channel('UC-OVMPlMA3-YCIeg4z5z23A')
-# print(f'id:\n{ch.channel_id}')
-# print(f'title:\n{ch.title}')
-# print(f'description:\n{ch.description}')
-# print(f'url:\n{ch.url}')
-# print(f'subscriberCount:\n{ch.subscriber_count}')
-# print(f'videoCount:\n{ch.video_count}')
-# print(f'viewCount:\n{ch.view_count}')
