@@ -3,13 +3,9 @@ import os
 
 from googleapiclient.discovery import build
 
-from path import get_path
-
 
 class Channel:
     """Класс для ютуб-канала"""
-
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = get_path()
     api_key: str = os.getenv('YOUTUBE_API_KEY')
 
     def __init__(self, channel_id: str) -> None:
